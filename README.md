@@ -87,6 +87,4 @@ Before running this application, make sure you have the following installed:
 
 ## 📞 Contact
 
-Toe Aung Linn - toeaunglynn@gmail.com]
-
-Project Link: 
+Toe Aung Linn - [toeaunglynn@gmail.com]

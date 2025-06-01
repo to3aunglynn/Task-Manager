@@ -36,18 +36,18 @@
                     <tr th:each="task : ${tasks}">
                         <td th:text="${task.title}"></td>
                         <td th:text="${task.description}"></td>
-                        <td th:text="${task.dueDate}"></td>
+                        <td th:text="${#temporals.format(task.dueDate, 'yyyy-MM-dd')}"></td>
                         <td>
                                     <span th:class="${'badge ' +
-                                        (task.priority == 'HIGH' ? 'bg-danger' :
-                                        (task.priority == 'MEDIUM' ? 'bg-warning' : 'bg-info'))}"
+                                        (task.priority == 'Low' ? 'bg-light text-dark' :
+                                        (task.priority == 'Medium' ? 'bg-warning' : 'bg-danger'))}"
                                           th:text="${task.priority}">
                                     </span>
                         </td>
                         <td>
                                     <span th:class="${'badge ' +
-                                        (task.status == 'DONE' ? 'bg-success' :
-                                        (task.status == 'IN_PROGRESS' ? 'bg-warning' : 'bg-secondary'))}"
+                                        (task.status == 'Todo' ? 'bg-secondary' :
+                                        (task.status == 'In Progress' ? 'bg-info' : 'bg-success'))}"
                                           th:text="${task.status}">
                                     </span>
                         </td>

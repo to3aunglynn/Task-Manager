@@ -15,7 +15,7 @@ public class Task {
 
     private String description;
 
-    @Column(name = "due_date")
+    @Column(name = "due-date")
     private LocalDate dueDate;
 
     private String priority;  // e.g., LOW, MEDIUM, HIGH
